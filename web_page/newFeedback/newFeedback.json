@@ -1,0 +1,1319 @@
+{
+  "modelVersion" : "2.3",
+  "id" : "newFeedback",
+  "name" : "newFeedback",
+  "lastUpdate" : 1679935467595,
+  "rows" : [
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "3464a448-1da7-4ad0-b8bb-f9be73e99a05",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "b5fe50b8-0fe7-4fc4-8765-316b7cf69860",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 4"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Feedback for Student"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  }
+                },
+                "reference" : "d472ed8d-bbf4-47fc-a891-5180b0ebc0d1",
+                "hasValidationError" : false,
+                "id" : "pbTitle",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "123c7233-c96e-4a8d-805f-cf78ec3d7d99",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "description" : "Auto generate ui for business object \"com.acmeschool.model.StudentGrades\"",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{student.firstname + \" \" + student.lastname}}"
+                        },
+                        "level" : {
+                          "type" : "constant",
+                          "value" : "Level 2"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "fa2057b0-1d02-431b-aad8-21565e676151",
+                      "hasValidationError" : false,
+                      "id" : "pbTitle"
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "repeatedCollection" : {
+                          "type" : "variable"
+                        }
+                      },
+                      "reference" : "570ed8ce-d1aa-458d-b0a5-62477189003b",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "description" : "\"com.acmeschool.model.StudentGrades\" object from \"studentGrades\" variable",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "Student Grades"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
+                              }
+                            },
+                            "reference" : "55904f1b-5688-4c33-b9e2-ff45ecc290f9",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "headers" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "Subject",
+                                  "Grade"
+                                ]
+                              },
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "condensed" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "bordered" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "selectedRow" : {
+                                "type" : "variable",
+                                "value" : "studentGrades_selected"
+                              },
+                              "columnsKey" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "subject",
+                                  "grade"
+                                ]
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "content" : {
+                                "type" : "expression",
+                                "value" : "studentGrades"
+                              },
+                              "zebraStriping" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "allowHTML" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "striped" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "70925c98-1693-4ac4-aa3f-4bfefd99fed4",
+                            "hasValidationError" : false,
+                            "id" : "pbTable",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 1,
+                              "sm" : 1,
+                              "xs" : 1,
+                              "lg" : 1
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!studentGrades_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 1
+                              }
+                            },
+                            "reference" : "898adf2d-4e7f-4b70-bab0-8040cf5e5ca8",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [ ]
+                            ]
+                          },
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 11,
+                              "sm" : 11,
+                              "xs" : 11,
+                              "lg" : 11
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!studentGrades_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 11
+                              }
+                            },
+                            "reference" : "e6208f4b-fbd6-48ce-96cb-3cc88a88091b",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "description" : "Display \"StudentGrades\" details when a line is selected in the table above",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!studentGrades_selected.idStudent"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Id Student"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "number"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "studentGrades_selected.idStudent"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "minLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "maxLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "min" : {
+                                      "type" : "constant"
+                                    },
+                                    "max" : {
+                                      "type" : "constant"
+                                    },
+                                    "step" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    }
+                                  },
+                                  "reference" : "e46ba1c8-de3d-42e8-9fd5-7731ab7f16bd",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!studentGrades_selected.grade"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Grade"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "number"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "studentGrades_selected.grade"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "4a4f781c-8a09-4d04-9342-62e1ed529f3d",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!studentGrades_selected.subject"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Subject"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "studentGrades_selected.subject"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "allowHTML" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "minLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "maxLength" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "min" : {
+                                      "type" : "constant"
+                                    },
+                                    "max" : {
+                                      "type" : "constant"
+                                    },
+                                    "step" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    }
+                                  },
+                                  "reference" : "232acf01-8e43-44c0-aad0-8875ad86db3c",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "container",
+                                  "dimension" : {
+                                    "xs" : 12
+                                  },
+                                  "propertyValues" : { },
+                                  "reference" : "b2211227-92f7-4449-8f50-543a0af61b7c",
+                                  "hasValidationError" : false,
+                                  "id" : "pbContainer",
+                                  "description" : "\"com.acmeschool.model.ReferencePeriod\" object from \"studentGrades_referencePeriod_selected.referencePeriod\" variable",
+                                  "rows" : [
+                                    [
+                                      {
+                                        "type" : "component",
+                                        "dimension" : {
+                                          "md" : 12,
+                                          "sm" : 12,
+                                          "xs" : 12,
+                                          "lg" : 12
+                                        },
+                                        "propertyValues" : {
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "level" : {
+                                            "type" : "constant",
+                                            "value" : "Level 4"
+                                          },
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "text" : {
+                                            "type" : "interpolation",
+                                            "value" : "ReferencePeriod"
+                                          },
+                                          "alignment" : {
+                                            "type" : "constant",
+                                            "value" : "left"
+                                          },
+                                          "dimension" : {
+                                            "type" : "constant",
+                                            "value" : 12
+                                          },
+                                          "allowHTML" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          }
+                                        },
+                                        "reference" : "c3c811a0-d6c8-4591-a716-dc00d5741f72",
+                                        "hasValidationError" : false,
+                                        "id" : "pbTitle",
+                                        "description" : ""
+                                      }
+                                    ],
+                                    [
+                                      {
+                                        "type" : "container",
+                                        "dimension" : {
+                                          "md" : 1,
+                                          "sm" : 1,
+                                          "xs" : 1,
+                                          "lg" : 1
+                                        },
+                                        "propertyValues" : {
+                                          "repeatedCollection" : {
+                                            "type" : "variable"
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "dimension" : {
+                                            "type" : "constant",
+                                            "value" : 1
+                                          }
+                                        },
+                                        "reference" : "26396bab-29c1-45f4-a974-94c238297585",
+                                        "hasValidationError" : false,
+                                        "id" : "pbContainer",
+                                        "rows" : [
+                                          [ ]
+                                        ]
+                                      },
+                                      {
+                                        "type" : "container",
+                                        "dimension" : {
+                                          "md" : 11,
+                                          "sm" : 11,
+                                          "xs" : 11,
+                                          "lg" : 11
+                                        },
+                                        "propertyValues" : {
+                                          "repeatedCollection" : {
+                                            "type" : "variable"
+                                          },
+                                          "hidden" : {
+                                            "type" : "constant",
+                                            "value" : false
+                                          },
+                                          "cssClasses" : {
+                                            "type" : "constant",
+                                            "value" : ""
+                                          },
+                                          "dimension" : {
+                                            "type" : "constant",
+                                            "value" : 11
+                                          }
+                                        },
+                                        "reference" : "64cb1d24-4038-4b81-8aa2-a4eac68876c0",
+                                        "hasValidationError" : false,
+                                        "id" : "pbContainer",
+                                        "description" : "Display \"ReferencePeriod\" details when a line is selected in the table above",
+                                        "rows" : [
+                                          [
+                                            {
+                                              "type" : "component",
+                                              "dimension" : {
+                                                "md" : 12,
+                                                "sm" : 12,
+                                                "xs" : 12,
+                                                "lg" : 12
+                                              },
+                                              "propertyValues" : {
+                                                "labelHidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "hidden" : {
+                                                  "type" : "expression",
+                                                  "value" : "!studentGrades_referencePeriod.name"
+                                                },
+                                                "labelPosition" : {
+                                                  "type" : "constant",
+                                                  "value" : "top"
+                                                },
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "labelWidth" : {
+                                                  "type" : "constant",
+                                                  "value" : 1
+                                                },
+                                                "readOnly" : {
+                                                  "type" : "constant",
+                                                  "value" : true
+                                                },
+                                                "label" : {
+                                                  "type" : "interpolation",
+                                                  "value" : "Name"
+                                                },
+                                                "placeholder" : {
+                                                  "type" : "constant"
+                                                },
+                                                "type" : {
+                                                  "type" : "constant",
+                                                  "value" : "text"
+                                                },
+                                                "dimension" : {
+                                                  "type" : "constant",
+                                                  "value" : 12
+                                                },
+                                                "value" : {
+                                                  "type" : "variable",
+                                                  "value" : "studentGrades_referencePeriod.name"
+                                                },
+                                                "required" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                }
+                                              },
+                                              "reference" : "c617d3ea-c15c-49e4-90fd-b8716a16dbe4",
+                                              "hasValidationError" : false,
+                                              "id" : "pbInput",
+                                              "description" : ""
+                                            }
+                                          ],
+                                          [
+                                            {
+                                              "type" : "component",
+                                              "dimension" : {
+                                                "md" : 12,
+                                                "sm" : 12,
+                                                "xs" : 12,
+                                                "lg" : 12
+                                              },
+                                              "propertyValues" : {
+                                                "hidden" : {
+                                                  "type" : "expression",
+                                                  "value" : "!studentGrades_referencePeriod.startDate"
+                                                },
+                                                "dateFormat" : {
+                                                  "type" : "constant",
+                                                  "value" : "MM/dd/yyyy"
+                                                },
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "labelWidth" : {
+                                                  "type" : "constant",
+                                                  "value" : 1
+                                                },
+                                                "readOnly" : {
+                                                  "type" : "constant",
+                                                  "value" : true
+                                                },
+                                                "label" : {
+                                                  "type" : "interpolation",
+                                                  "value" : "Start Date"
+                                                },
+                                                "type" : {
+                                                  "type" : "constant"
+                                                },
+                                                "required" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "todayLabel" : {
+                                                  "type" : "constant",
+                                                  "value" : "Today"
+                                                },
+                                                "labelHidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "showToday" : {
+                                                  "type" : "constant",
+                                                  "value" : true
+                                                },
+                                                "labelPosition" : {
+                                                  "type" : "constant",
+                                                  "value" : "top"
+                                                },
+                                                "placeholder" : {
+                                                  "type" : "constant",
+                                                  "value" : "Enter a date (mm/dd/yyyy)"
+                                                },
+                                                "dimension" : {
+                                                  "type" : "constant",
+                                                  "value" : 12
+                                                },
+                                                "value" : {
+                                                  "type" : "variable",
+                                                  "value" : "studentGrades_referencePeriod.startDate"
+                                                }
+                                              },
+                                              "reference" : "903a960a-044c-4080-870c-d9fdd5d8735d",
+                                              "hasValidationError" : false,
+                                              "id" : "pbDatePicker",
+                                              "description" : ""
+                                            }
+                                          ],
+                                          [
+                                            {
+                                              "type" : "component",
+                                              "dimension" : {
+                                                "md" : 12,
+                                                "sm" : 12,
+                                                "xs" : 12,
+                                                "lg" : 12
+                                              },
+                                              "propertyValues" : {
+                                                "hidden" : {
+                                                  "type" : "expression",
+                                                  "value" : "!studentGrades_referencePeriod.endDate"
+                                                },
+                                                "dateFormat" : {
+                                                  "type" : "constant",
+                                                  "value" : "MM/dd/yyyy"
+                                                },
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "labelWidth" : {
+                                                  "type" : "constant",
+                                                  "value" : 1
+                                                },
+                                                "readOnly" : {
+                                                  "type" : "constant",
+                                                  "value" : true
+                                                },
+                                                "label" : {
+                                                  "type" : "interpolation",
+                                                  "value" : "End Date"
+                                                },
+                                                "type" : {
+                                                  "type" : "constant"
+                                                },
+                                                "required" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "todayLabel" : {
+                                                  "type" : "constant",
+                                                  "value" : "Today"
+                                                },
+                                                "labelHidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "showToday" : {
+                                                  "type" : "constant",
+                                                  "value" : true
+                                                },
+                                                "labelPosition" : {
+                                                  "type" : "constant",
+                                                  "value" : "top"
+                                                },
+                                                "placeholder" : {
+                                                  "type" : "constant",
+                                                  "value" : "Enter a date (mm/dd/yyyy)"
+                                                },
+                                                "dimension" : {
+                                                  "type" : "constant",
+                                                  "value" : 12
+                                                },
+                                                "value" : {
+                                                  "type" : "variable",
+                                                  "value" : "studentGrades_referencePeriod.endDate"
+                                                }
+                                              },
+                                              "reference" : "a1ebeea7-52aa-4cbc-8e4c-bb5bf6ad1f19",
+                                              "hasValidationError" : false,
+                                              "id" : "pbDatePicker",
+                                              "description" : ""
+                                            }
+                                          ]
+                                        ]
+                                      }
+                                    ]
+                                  ]
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "ff93fa48-615b-4e9c-99c0-a511791281c3",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.studentFeedbackInput.feedback"
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant"
+                        },
+                        "maxLength" : {
+                          "type" : "constant"
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Enter your notes about student {{student.firstname + \" \" + student.lastname}}"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "rows" : {
+                          "type" : "constant",
+                          "value" : 10
+                        }
+                      },
+                      "reference" : "ba8a0fe3-1a7e-4501-8be5-9b8a985cf759",
+                      "hasValidationError" : false,
+                      "id" : "customBigTextArea"
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "removeItem" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Submit"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "valueToAdd" : {
+                    "type" : "expression"
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  }
+                },
+                "reference" : "3d540219-7710-453e-a640-da506ae36015",
+                "hasValidationError" : false,
+                "id" : "pbButton",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHtml" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!formOutput._submitError.message"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+                  },
+                  "label" : {
+                    "type" : "interpolation"
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  }
+                },
+                "reference" : "444e63bb-a68a-4c30-93a8-cde615d21f0c",
+                "hasValidationError" : false,
+                "id" : "pbText",
+                "description" : ""
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "e63b8468-cd4f-4477-bc4c-0ce208853311",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "124818ae-071d-4eae-9134-ef1053fef788",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{\r",
+        "  \"studentFeedbackInput\" : {\r",
+        "    \"feedback\" : \"\"\r",
+        "  }\r",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){",
+        "\tconst liElements = $data.formOutput._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "\tstudentFeedbackInput: $data.formInput.studentFeedbackInput",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "studentGrades" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"findByIdStudent [com.acmeschool.model.StudentGrades]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"findByIdStudent\",\"displayName\":\"findByIdStudent\"},\"id\":\"com.acmeschool.model.StudentGrades\",\"filters\":[{\"name\":\"idStudent\",\"type\":\"LONG\",\"collection\":false,\"value\":\"{{studentFeedback.idStudent}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "studentGrades_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "studentGrades_referencePeriod" : {
+      "type" : "url",
+      "value" : [
+        "{{studentGrades_selected|lazyRef:'referencePeriod'}}"
+      ],
+      "exposed" : false
+    },
+    "student" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{studentFeedback.idStudent}}"
+      ],
+      "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "studentFeedback" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.studentFeedback_ref.link}}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "uuid" : "23323042-b1d2-45e5-a8d9-1f63f5758910",
+  "type" : "form",
+  "description" : "Page generated with Bonita UI designer"
+}

@@ -1,0 +1,87 @@
+{
+  "modelVersion" : "2.3",
+  "properties" : [
+    {
+      "label" : "Value",
+      "name" : "value",
+      "type" : "text",
+      "defaultValue" : "This is the initial value",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Read-only",
+      "name" : "readOnly",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Required",
+      "name" : "required",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "expression"
+    },
+    {
+      "label" : "Interpret HTML",
+      "name" : "allowHTML",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "constant"
+    },
+    {
+      "label" : "Value min length",
+      "name" : "minLength",
+      "type" : "integer",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Value max length",
+      "name" : "maxLength",
+      "type" : "integer",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Label Hiddel",
+      "name" : "labelHidden",
+      "type" : "boolean",
+      "defaultValue" : false,
+      "bond" : "constant"
+    },
+    {
+      "label" : "Label",
+      "name" : "label",
+      "type" : "text",
+      "defaultValue" : "Default label",
+      "bond" : "interpolation"
+    },
+    {
+      "label" : "Label position",
+      "name" : "labelPosition",
+      "type" : "choice",
+      "defaultValue" : "top",
+      "choiceValues" : [
+        "left",
+        "top"
+      ],
+      "bond" : "constant"
+    },
+    {
+      "label" : "Label Width",
+      "name" : "labelWidth",
+      "type" : "integer",
+      "defaultValue" : 4,
+      "bond" : "constant"
+    }
+  ],
+  "id" : "customBigTextArea",
+  "name" : "BigTextArea",
+  "lastUpdate" : 1679956469489,
+  "template" : "@customBigTextArea.tpl.html",
+  "controller" : "@customBigTextArea.ctrl.js",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

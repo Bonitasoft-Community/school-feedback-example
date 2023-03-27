@@ -1,0 +1,40 @@
+<!-- The custom widget template is defined here
+   - You can use standard HTML tags and AngularJS built-in directives, scope and interpolation system
+   - Custom widget properties defined on the right can be used as variables in a templates with properties.newProperty
+   - Functions exposed in the controller can be used with ctrl.newFunction()
+   - You can use the 'environment' property injected in the scope when inside the Editor whiteboard. It allows to define a mockup
+     of the Custom Widget to be displayed in the whiteboard only. By default the widget is represented by an auto-generated icon
+     and its name (See the <span> below).
+-->
+ 
+<div ng-class="{
+    'form-horizontal': properties.labelPosition === 'left' && !properties.labelHidden,
+    'row': properties.labelPosition === 'top' && !properties.labelHidden || properties.labelHidden
+    }">
+    <div class="form-group">
+        <label
+            ng-if="!properties.labelHidden && properties.allowHTML"
+            ng-class="{ 'control-label--required': properties.required }"
+            class="control-label col-xs-{{ properties.labelPosition === 'left' ? properties.labelWidth : 12 }}"
+            ng-bind-html="properties.label | uiTranslate">
+        </label>
+        <label
+            ng-if="!properties.labelHidden && !properties.allowHTML"
+            ng-class="{ 'control-label--required': properties.required }"
+            class="control-label col-xs-{{ properties.labelPosition === 'left' ? properties.labelWidth : 12 }}"
+            ng-bind="properties.label | uiTranslate">
+        </label>
+        <div class="col-xs-{{ 12 - (!properties.labelHidden && properties.labelPosition === 'left' ? properties.labelWidth : 0) }}">
+            <textarea class="form-control" rows="10"
+                name="{{ctrl.name}}"
+                ng-model="properties.value"
+                ng-model-options="{ allowInvalid: true }"
+                ng-required="properties.required"
+                ng-minlength="properties.minLength"
+                ng-maxlength="properties.maxLength"
+                ng-readonly="properties.readOnly">
+            </textarea>
+            <div ng-messages="$form[ctrl.name].$dirty && $form[ctrl.name].$error " ng-messages-include="forms-generic-errors.html" role="alert"></div>
+        </div>
+    </div>
+</div>

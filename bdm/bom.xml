@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.15.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.acmeschool.model.ReferencePeriod">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="startDate" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="endDate" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.acmeschool.model.StudentFeedback">
+            <fields>
+                <field type="LONG" length="255" name="idStudent" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="idProvider" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="feedback" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.acmeschool.model.ReferencePeriod" fetchType="LAZY" name="periodReference" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.acmeschool.model.StudentGrades">
+            <fields>
+                <field type="LONG" length="255" name="idStudent" nullable="true" collection="false"/>
+                <field type="FLOAT" length="255" name="grade" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="subject" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.acmeschool.model.ReferencePeriod" fetchType="LAZY" name="referencePeriod" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
