@@ -1,0 +1,59 @@
+:doctype: book
+:toc: left
+:toclevels: 3
+:sectnums:
+:icons: font
+:source-highlighter: highlightjs
+:idprefix:
+:idseparator: -
+:sectlinks:
+:sectanchors:
+:linkcss: false
+
+:short-bonita-version: 7.15
+:bonita-studio: 2022.2
+:doc-url: https://documentation.bonitasoft.com/bonita/7.15
+:java-version: 11
+= School Feedback Example
+
+The project **school-feedback-example** is a Bonita project built with **Bonita {bonita-studio}**  **Community** version written in `groovy` language.
+
+It contains processes at a school where the teacher needs to give feedback to students based on their grades. It is part of the #BonitaExpress journey.
+
+== Features
+
+* How to integrate a custom connector
+* How to communicate with an AI to accelerate human tasks
+* How to iterate with parallel multi-instantiation
+
+== Getting started
+
+* Use "Production" environment (it should be selected as active). It is already configured with parameters and actor mappings.
+* Configure your maven preferences, so it takes into account the required maven repository (where your connector is available) configuration.
+* The project contains 3 different diagrams: 
+ - FeedbackSubmissionDiagram
+ - GradesPopulationDiagram
+ - PeriodClosingDiagram
+ 
+First, launch GradesPopulationDiagram so the algorithm populates the database with grades for students and given subjects. 
+Then, on FeedbackSubmissionDiagram, confirm that the task 'Complete personal notes' is set correctly. 
+
+For more details on Bonita Connector please refer to {doc-url}/connector-archetype[documentation]
+
+== Developing
+
+Prerequisite:
+
+- Java ( **jdk {java-version}** or higher)
+- **Bonita {bonita-studio}** 
+- A Git client (optional but highly recommended)
+
+
+== Links
+
+. Webinar replay: https://www.bonitasoft.com/videos
+. Repository: https://github.com/Bonitasoft-Community/school-feedback-example
+. Issue tracker: https://github.com/Bonitasoft-Community/school-feedback-example/issues
+.. In case of sensitive bugs like security vulnerabilities, please contact
+    adoption@bonitasoft.com directly instead of using issue tracker. We value your effort
+    to improve the security and privacy of this project!
