@@ -16,9 +16,9 @@
 :java-version: 11
 = School Feedback Example
 
-The project **school-feedback-example** is a Bonita project built with **Bonita {bonita-studio}**  **Community** version written in `groovy` language.
+The project **school-feedback-example** is a Bonita project built with **Bonita {bonita-studio}**  **Community** version written in `groovy` language. 
 
-It contains processes at a school where the teacher needs to give feedback to students based on their grades. It is part of the #BonitaExpress journey.
+It contains processes at a school where the teacher needs to give feedback to students based on their grades. It is part of the #BonitaExpress journey. It demonstrates how to use a custom connector on your Bonita project.
 
 == Features
 
@@ -53,6 +53,7 @@ Prerequisite:
 
 . Webinar replay: https://www.bonitasoft.com/videos
 . Repository: https://github.com/Bonitasoft-Community/school-feedback-example
+. Custom connector: https://github.com/thaliacruz-bonita/custom-connector-openai-example/
 . Issue tracker: https://github.com/Bonitasoft-Community/school-feedback-example/issues
 .. In case of sensitive bugs like security vulnerabilities, please contact
     adoption@bonitasoft.com directly instead of using issue tracker. We value your effort
